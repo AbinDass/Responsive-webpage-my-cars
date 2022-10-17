@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MY CARS     </title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito:wght@200&display=swap');
+      #carouselBasicExample,
+      .carousel-inner,
+      .carousel-item .active,
+      .carousel-item{
+        height: 40vw;
+      }
+      .carousel-item:nth-child(1){
+        background-image: url('./images/garage.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    
+      }
+      .carousel-item:nth-child(2){
+        background-image: url('./images/garage2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    
+      }
+      .carousel-item:nth-child(3){
+        background-image: url("./images/lambo.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    
+      }
+    </style>
+  </head>
+  <body>
+   
+    
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <img src="./images/logo-1.jpg" alt="car_logo" id="carlogo" style="width: 10%;">
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">AboutUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">ContactUs</a>
+            </li>
+            
+          </ul>
+       
+                  <div class="input-group">
+              <div class="form-outline">
+                <input type="search" id="form1" class="form-control" />
+                <label class="form-label" for="form1">Search</label>
+              </div>
+              <button type="button" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+      
+        
+      
+    
+  </div>
+</div>
+    </nav> -->
+    <header class="yvy">
+      <nav class="navbar navbar-expand-lg text-light  " style="background-color: rgba(0, 0, 0, 0.89);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1 class="text-light">MY<h2 class="text-primary">CARS</h2></h1></a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav-button"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">cars</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">contact us</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search your car" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+     <!-- Carousel wrapper -->
+<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+<!-- Indicators -->
+<div class="carousel-indicators">
+  <button
+    type="button"
+    data-mdb-target="#carouselBasicExample"
+    data-mdb-slide-to="0"
+    class="active"
+    aria-current="true"
+    aria-label="Slide 1"
+  ></button>
+  <button
+    type="button"
+    data-mdb-target="#carouselBasicExample"
+    data-mdb-slide-to="1"
+    aria-label="Slide 2"
+  ></button>
+  <button
+    type="button"
+    data-mdb-target="#carouselBasicExample"
+    data-mdb-slide-to="2"
+    aria-label="Slide 3"
+  ></button>
+</div>
+
+<!-- Inner -->
+<div class="carousel-inner">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <div class="mask" style="background-color: rgba(0,0,0,0.5);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white text-center">
+        <h1 class="text-white" style="font-family: Lobster;">PICK YOUR POWER TOY</h1>
+        <h3 class="text-white" style="font-family: Lobster;">IT ALL START FROM THE DREAM.</h3>
+        <button type="button" class="btn btn-primary px-3 me-2 p-2 ms-auto">
+          Login
+        </button>
+        <button type="button" class="btn btn-primary me-3">
+          Sign up for free
+        </button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="mask" style="background-color: rgba(0,0,0,0.5);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white text-center">
+          <h1  style="font-family: Lobster;">PICK YOUR POWER TOY</h1>
+          <h3  style="font-family: Lobster;">IT ALL START FROM THE DREAM.</h3>
+          <button type="button" class="btn btn-primary px-3 me-2 p-2 ms-auto">
+            Login
+          </button>
+          <button type="button" class="btn btn-primary me-3">
+            Sign up for free
+          </button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="mask" style="background-color: rgba(0,0,0,0.5);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white text-center">
+        <h1  style="font-family: Lobster;">PICK YOUR POWER TOY</h1>
+        <h3  style="font-family: Lobster;">IT ALL START FROM THE DREAM.</h3>
+        <button type="button" class="btn btn-primary px-3 me-2 p-2 ms-auto">
+          Login
+        </button>
+        <button type="button" class="btn btn-primary me-3">
+          Sign up for free
+        </button>
+      </div>
+    </div>
+    </div>
+</div>
+<!-- Inner -->
+
+<!-- Controls -->
+<button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+<!-- Carousel wrapper -->
+    </section>
+    
+    
+
+
+
+
+      
+    <section class="container-fluid " style="background-color: rgba(0, 0, 0, 0.904);">
+                <div class="pt-5 ps-5 ">
+                  <h1 class="text-white" style="font-family: abril fatface;"> BUY PREMIUM CARS HERE </h1>
+                </div>
+      <div class="row ms-5  me-5  justify-content-center">
+          <div class="card  ms-3 mt-3  col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">
+              <img class="card-img-top" src="./images/musthang.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Ford musthang</h5>
+                <p class="card-text">less used musthang urgent sale</p>
+                <p class="card-text">year: 2018</p>
+                <p class="card-text">type: automatic</p>
+                <p class="card-text">price: 50L</p>
+                <button onclick="display()" class="btn btn-primary"> <a href="#" class="btn btn-primary">Enquire Now</a> </button>
+              </div>
+            </div>
+
+          <div class="card ms-3 mt-3  col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2 " >
+          <img class="card-img-top" src="./images/audi.png" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title"> Audi</h5>
+                <p class="card-text">less used audi No complaint</p>
+                <p class="card-text">year: 2020</p>
+                <p class="card-text">type: automatic</p>
+                <p class="card-text">price: 30L</p>
+                <button onclick="display()" class="btn btn-primary"> <a href="#" class="btn btn-primary">Enquire Now</a> </button>
+              </div>
+          </div>
+
+          <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2 ">
+              <img class="card-img-top" src="./images/bmw.webp" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">BMW 3 series</h5>
+                <p class="card-text">good urgent sale</p>
+                <p class="card-text">year: 2018</p>
+                <p class="card-text">type: manuel</p>
+                <p class="card-text">price: 23L</p>
+                <button onclick="display()" class="btn btn-primary"> <a href="#" class="btn btn-primary">Enquire Now</a> </button>
+                  </div>
+              </div>
+
+              <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                  <img class="card-img-top" src="./images/jaguare.jpg" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title">Jaguer</h5>
+                          <p class="card-text">good condition ,less used </p>
+                          <p class="card-text">year: 2014</p>
+                          <p class="card-text">type: manuel</p>
+                          <p class="card-text">price: 13L</p>
+                          <button onclick="display()" class="btn btn-primary"> <a href="#" class="btn btn-primary">Enquire Now</a> </button>
+                      </div>
+                  </div>
+                  <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                      <img class="card-img-top" src="./images/range rover.jpeg" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">range rover</h5>
+                              <p class="card-text">good fancy number</p>
+                              <p class="card-text">year: 2009</p>
+                              <p class="card-text">type: manuel</p>
+                              <p class="card-text">price: 10L</p>
+                              <button onclick="display()" class="btn btn-primary"> <a href="#" class="btn btn-primary">Enquire Now</a> </button>
+                          </div>
+                      </div>
+
+                  <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                      <img class="card-img-top" src="./images/volvo.jpg" alt="Card image cap">
+                          <div class="card-body">
+                              <h5 class="card-title">volvo 300</h5>
+                              <p class="card-text">well condition less used single owner</p>
+                              <p class="card-text">year: 2015</p>
+                              <p class="card-text">type: automatic</p>
+                              <p class="card-text">price: 33L</p>
+                              <button onclick="display()" class="btn btn-primary"> <a href="#" class="btn btn-primary">Enquire Now</a></button>
+                          </div>
+                      </div>
+                  
+                      <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2 ">
+                          <img class="card-img-top" src="./images/porche.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                  <h5 class="card-title">porche </h5>
+                                  <p class="card-text">rare color, fancy number</p>
+                                  <p class="card-text">year: 2019</p>
+                                  <p class="card-text">type: automatic</p>
+                                  <p class="card-text">price: 40L</p>
+                                  <button onclick="display()" class="btn btn-primary"><a href="#" class="btn btn-primary">Enquire Now</a></button> 
+                              </div>
+                          </div>
+                      
+                          <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2 ">
+                              <img class="card-img-top" src="./images/gwagon.jpg" alt="Card image cap">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Gwagon</h5>
+                                      <p class="card-text">Brand new ,less Km driven</p>
+                                      <p class="card-text">year: 2022</p>
+                                      <p class="card-text">type: automatic</p>
+                                      <p class="card-text">price: 1.5CR</p>
+                                      <button onclick="display()" class="btn btn-primary"><a href="#" class="btn btn-primary">Enquire Now</a></button>
+                                  </div>
+                              </div>
+
+                              <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2 ">
+                                  <img class="card-img-top" src="./images/defender.jpeg" alt="Card image cap">
+                                      <div class="card-body">
+                                          <h5 class="card-title">Defendor</h5>
+                                          <p class="card-text">good condition ,less Km driven</p>
+                                          <p class="card-text">year: 2022</p>
+                                          <p class="card-text">type: automatic</p>
+                                          <p class="card-text">price: 1 CR</p>
+                                          <button onclick="display()" class="btn btn-primary"><a href="#" class="btn btn-primary">Enquire Now</a></button>
+                                      </div>
+                                  </div>
+                              
+                                  <div class="card ms-3 mt-3 col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-2" >
+                                      <img class="card-img-top" src="./images/land rover.jpg" alt="Card image cap">
+                                          <div class="card-body">
+                                              <h5 class="card-title">land rover</h5>
+                                              <p class="card-text">Brand new ,off road king</p>
+                                              <p class="card-text">year: 2012</p>
+                                              <p class="card-text">type: manuel</p>
+                                              <p class="card-text">price: 9 L</p>
+                                              <button onclick="display()" class="btn btn-primary"> <a href="#" class="btn btn-primary" id="enq"> enquire now </a> </button>
+                                          </div>
+                                      </div>
+      </div>
+  </section>
+
+
+  <section>
+    
+ <div style="background-color: rgba(5, 4, 4, 0.922); ">
+  <div class="container">
+    <div class="row gx-lg-4">
+  <h1 class="ps-5 pt-5" style="font-family: san-serif; color: white;">AVAILABLE RENTED CARS</h1>
+<div class="col-md-4">
+  <div class="card">
+    <img src="./images/068ad75ab2caf68e8618b2fea43497cc.jpg" class="card-img-top" alt="Fissure in Sandstone" style="height: 300px;" />
+    <div class="card-body">
+      <h5 class="card-title">modified Swift</h5>
+      <p class="card-text">use only for marriage purpus</p>
+      <a href="#!" class="btn btn-primary">BOOK NOW</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card">
+    <img src="./images/Honda-Civic-modified-featured.jpg" class="card-img-top" alt="Fissure in Sandstone" style="height: 300px;"/>
+    <div class="card-body">
+      <h5 class="card-title">Honda civic</h5>
+      <p class="card-text">completely modified and use for functions..</p>
+      <a href="#!" class="btn btn-primary">BOOK NOW</a>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card">
+    <img src="./images/honda-civic-modified-india-launch-price-3.jpg" class="card-img-top" alt="Fissure in Sandstone" style="height: 300px;"/>
+    <div class="card-body">
+      <h5 class="card-title">civic india lounch</h5>
+      <p class="card-text">completely modified and use for functions.</p>
+      <a href="#!" class="btn btn-primary">BOOK NOW</a>
+    </div>
+  </div>
+</div>
+ 
+  
+    
+  </section>
+  <section class="pt-5" style="background-color: black;">
+      <a href="#" style="text-decoration: underline; color: blue;"><h1 class="text-light text-center">ABOUT US</h1></a>
+    <div class="container d-flex">
+          <div class="text-light ps-5 pt-5" style="width: 50%;">
+            <p style="text-align: left;"> &emsp; Welcome to Guaranteed Automotive and Transmission Service, your head pick for master vehicle fix close and around Lafayette, IN. Our very educated ASE-Certified auto mechanics really have an enthusiasm for playing out a wide range of vehicle fix administrations, huge or little.
+
+              Our group can get to the foundation of the issue and fix car glitches that other vehicle benefit focuses may miss. The amenable and agreeable group at ‘My cars’ has such huge numbers of faithful and long-haul customers since we meet due dates, surpass guarantees, and go well beyond inevitably. </p>
+          </div>
+          <div class="text-light ps-5 pt-5" style="width: 50%;">
+           <p style="text-align:  left;"> &emsp; Vehicle proprietors in the Lafayette, IN territory, have come to believe that ‘My cars’ is not normal for some other vehicle fix shop. In case you’re searching for an auto-fix encounter that is consistent and agreeable, at that point you’ll be satisfied that you chose us.
+
+            The group at ‘My cars’ is productive, wonderful, and has the mission of having your head out in a vehicle that will keep you, your travelers, and different drivers out and about out of damage’s way. A few different things make us emerge, including: </p>
+          </div>
+    </div>
+
+  </section>
+
+  <section style="background-color:  rgba(5, 4, 4, 0.922);">
+ 
+    <div class="container" >
+      <a href="#" style="text-decoration: underline; color: blue;"><h1 class="text-center pt-5 text-white" style="font-family: crimson text;">Services</h1></a>
+      <div class="d-flex">
+        <div>
+        <img src="./images/automotive-service-advisor.webp" alt="services" width="50%">
+      </div>
+        <div class="pt-5">
+          <h5 class="text-white">ACCESORIES</h5><BR>
+          <h5 class="text-white">FORM WASH</h5><BR>
+          <h5 class="text-white">FULL SERVICE</h5><BR>
+          <h5 class="text-white">MODIFICATION</h5><BR>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section  style="background-color: black">
+    <a href="#" style="text-decoration: underline; color: blue;"><h1 class="text-center text-light pt-5">CONTACT US</h1></a>
+    <form class="container pt-5" >
+      <!-- 2 column grid layout with text inputs for the first and last names -->
+      <div class="row mb-4">
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form3Example1" class="form-control bg-dark text-white" />
+            <label class="form-label text-white" for="form3Example1">First name</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-outline">
+            <input type="text" id="form3Example2" class="form-control bg-dark text-white" />
+            <label class="form-label text-white" for="form3Example2">Last name</label>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <input type="email" id="form3Example3" class="form-control bg-dark text-white" />
+        <label class="form-label text-white" for="form3Example3">Email address</label>
+      </div>
+    
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <input type="text" id="form3Example4" class="form-control bg-dark text-white"  />
+        <label class="form-label text-white" for="form3Example4">Mobile number</label>
+      </div>
+      
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4 text-white "> Send Me</button>
+    
+      <!-- Register buttons -->
+      <div class="text-center">
+        <p>or sign up with:</p>
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-facebook-f"></i>
+        </button>
+    
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-google"></i>
+        </button>
+    
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-twitter"></i>
+        </button>
+    
+        <button type="button" class="btn btn-primary btn-floating mx-1">
+          <i class="fab fa-github"></i>
+        </button>
+      </div>
+    </form>
+  </section>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="mycars.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
